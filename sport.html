@@ -1,0 +1,174 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<!----><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Адаптивная вёрстка сайта</title>
+<!--google font connection--><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+<!--icons connection --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+<!----> <link rel="stylesheet" type="text/css" href="cssSport.css">
+<!--library jquery-->  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ <!--plugin not to write prefixes--><script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+ <script src="JS_AdaptiveDesign.js"></script>
+</head>
+<body>
+<header>
+<!--header-->
+	<nav class="container">
+	
+	<!--logo-->
+		<a class="logo" href="">
+			<img src="images/crossfit.jpg">
+			<span>Crossfit</span>
+		</a>
+		
+		<!--button show/hide main menu-->
+		<div class="nav-toggle"><span></span></div>
+		
+		<!--search form-->
+		<form action="" method="get" id="searchForm">
+			<input type="text" placeholder="Search...">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+		
+		<!--main menu -->
+		<ul id="menu">
+			<li><a href="">About Us</a></li>
+			<li><a href="">Sign Up</a></li>
+			<li><a href="">log In</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="container">
+	<!--articles-->
+	<div class="post-list">
+		<article id="post-1" class="post">
+			<div class="post-image">
+				<a href=""><img src="images/froning.jpg"></a>
+			</div>
+			<div class="post-content">
+				<div class="category">
+					<a href="">People</a>
+				</div>
+				<h2 class="post-title">Richard Froning</h2>
+				<p>There is text........................</p>
+				<div class="post-footer">
+					<a class="more-link" href="">Read more</a>
+					<div class="post-social">
+						<a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+		<article id="post-2" class="post">
+			<div class="post-image">
+				<a href=""><img src="images/run.jpg"></a>
+			</div>
+			<div class="post-content">
+				<div class="category">
+					<a href="">Event</a>
+				</div>
+				<h2 class="post-title">Crossfit Games</h2>
+				<p>There is text........................</p>
+				<div class="post-footer">
+					<a class="more-link" href="">Read more</a>
+					<div class="post-social">
+						<a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+		<article id="post-3" class="post">
+			<div class="post-image">
+				<a href=""><img src="images/squat.jpg"></a>
+			</div>
+			<div class="post-content">
+				<div class="category">
+					<a href="">Wod</a>
+				</div>
+				<h2 class="post-title">Overhead Squats</h2>
+				<p>There is text........................</p>
+				<div class="post-footer">
+					<a class="more-link" href="">Read more</a>
+					<div class="post-social">
+						<a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+	
+	<!--aside collumn-->
+	<aside>
+		<div class="widget">
+			<h3 class="widget-title">Categories</h3>
+			<ul class="widget-category-list">
+				<li><a href="">People</a> (2)</li>
+				<li><a href="">Events</a> (5)</li>
+				<li><a href="">Wods</a> (1)</li>
+			</ul>
+		</div>
+		<div class="widget">
+			<h3 class="widget-title">Last notes</h3>
+			<ul class="widget-posts-list">
+				<li>
+					<div class="post-image-small">
+						<a href=""><img src="images/froning.jpg"></a>
+					</div>
+					<h4 class="widget-post-title">Richard Froning</h4>
+				</li>
+				<li>
+					<div class="post-image-small">
+						<a href=""><img src="images/run.jpg"></a>
+					</div>
+					<h4 class="widget-post-title">Crossfit Games</h4>
+				</li>
+				<li>
+					<div class="post-image-small">
+						<a href=""><img src="images/squat.jpg"></a>
+					</div>
+					<h4 class="widget-post-title">Overhead squat</h4>
+				</li>
+			</ul>
+		</div>
+		<div class="widget">
+			<h3 class="widget-title">Subscribe</h3>
+			<form action="" method="post" id="subscribe">
+				<input type="email" name="email" placeholder="Your email" required>
+				<button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+			</form>
+		</div>
+	</aside>
+</div>
+
+<!--footer-->
+<footer>
+	<div class="container">
+		<div class="footer-col">
+			<span> © 2018</span>
+		</div>
+		<div class="footer-col">
+			<div class="social-bar-wrap">
+				<a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+				<a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="footer-col">
+			<a href="  ">Write a letter</a>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
